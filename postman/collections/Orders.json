@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "322239bb-446e-419a-83f0-a2302e3a4f81",
+		"name": "Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "15252505-322239bb-446e-419a-83f0-a2302e3a4f81"
+	},
+	"item": [
+		{
+			"name": "Sample endpoint: Returns details about a particular user . Hello world. Added more text. This is another change",
+			"id": "4d971598-4a3d-4a95-bc9d-90f9c59204d8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/user?id=93743490",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "93743490",
+							"description": "(Required) ID of the user"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "d83e0755-d732-49e2-b176-a0a3299aab33",
+					"name": "Sample response: Details about a user by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/user?id=93743490",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "93743490",
+									"description": "(Required) ID of the user"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"disabled": false,
+							"description": "A link to the next page of responses",
+							"key": "x-next",
+							"value": "ut id nulla elit"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"id\": 66363438,\n  \"name\": \"dolor ut\",\n  \"tag\": \"sed qui amet est\"\n}"
+				},
+				{
+					"id": "6d44c760-a524-481e-9416-d9304faa3e33",
+					"name": "Unexpected error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/user?id=93743490",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "93743490",
+									"description": "(Required) ID of the user"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"code\": 33761237,\n  \"message\": \"incididunt quis\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "{{basicAuthUsername}}",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "{{basicAuthPassword}}",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "1f0aaf6d-47bd-4667-ad70-0aa8d0b8e3d4",
+			"key": "baseUrl",
+			"value": "localhost:3000",
+			"type": "string"
+		}
+	]
+}
