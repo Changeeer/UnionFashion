@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "3d8c93ca-812d-4b4a-a6ed-d9ff543a1ec0",
+		"_postman_id": "68b5ee19-2fea-45cc-afac-13fcafaae978",
 		"name": "Docs for Orders",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "15252505-3d8c93ca-812d-4b4a-a6ed-d9ff543a1ec0"
+		"_uid": "15252505-68b5ee19-2fea-45cc-afac-13fcafaae978"
 	},
 	"item": [
 		{
@@ -11,18 +11,21 @@
 			"item": [
 				{
 					"name": "New Request",
-					"id": "e2611f5b-7bda-42a6-998c-fd3119c54aea",
+					"id": "7b5e0788-3184-47a4-a098-de975225d0a4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": []
 				}
 			],
-			"id": "91c71c8a-bac6-4af7-a73e-232f565837a6"
+			"id": "f1d72865-9d66-4f7d-99a2-8f4ecf3ad4dd"
 		},
 		{
 			"name": "Sample endpoint: Returns details about a particular user . Hello world. Added more text",
@@ -30,7 +33,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "7d90d025-11ff-4566-9293-9cd73288248c",
+						"id": "ba94f974-a1fd-43c3-8694-dcca7ff82e9d",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -55,7 +58,7 @@
 					}
 				}
 			],
-			"id": "804a99e4-c877-44d0-a83e-b573839d33db",
+			"id": "a1895b1f-08a6-4d45-ab9e-104233abf521",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -81,7 +84,7 @@
 			},
 			"response": [
 				{
-					"id": "edcebd3c-31a8-4ad3-8c53-c2bd19ab668f",
+					"id": "eab59e38-3510-46e9-961f-6d701908015b",
 					"name": "Sample response: Details about a user by ID",
 					"originalRequest": {
 						"method": "GET",
@@ -111,6 +114,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"disabled": false,
@@ -127,7 +131,7 @@
 					"body": "{\n \"id\": -46856062,\n \"name\": \"commodo pariatur Excepteur aliqua\",\n \"tag\": \"laboris eiusmod in aliquip\"\n}"
 				},
 				{
-					"id": "c25b3e58-88fa-499d-bf12-cb51ddff247c",
+					"id": "8b8126b2-6665-4159-8fd2-344c8480db4e",
 					"name": "Unexpected error",
 					"originalRequest": {
 						"method": "GET",
@@ -157,6 +161,7 @@
 					"status": "Internal Server Error",
 					"code": 500,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
